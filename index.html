@@ -20,7 +20,7 @@
   };
 
   AFRAME.registerComponent('markerhandler', {
-init: function () {
+  init: function () {
   this.el.sceneEl.addEventListener('markerFound', () => {
     console.log("doesthiscall");
 
@@ -31,8 +31,8 @@ init: function () {
 
     document.getElementById("bro").style.visibility = "visible";
   })
-}
-});
+  }
+  });
     </script>
 
     <style>
