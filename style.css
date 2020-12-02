@@ -32,7 +32,6 @@
   }
 
 
-  
     .title{
     font-family: 'Castoro', serif;
     font-size: 5vw;
@@ -84,6 +83,7 @@
       width: 15vw;
       height: 15vw;
       transform: scale(1);
+      outline: none;
       }
   
       #callme{
