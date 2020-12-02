@@ -18,27 +18,12 @@
         window.location.href="tel:0044 7795522340";
       });
 
-  };
+          };
 
-  AFRAME.registerComponent('markerhandler', {
-  init: function () {
-  this.el.sceneEl.addEventListener('markerFound', () => {
-    console.log("doesthiscall");
 
-    document.getElementById("bro").style.visibility = "hidden";
-  })
-  this.el.sceneEl.addEventListener('markerLost', () => {
-    console.log("call2");
-
-    document.getElementById("bro").style.visibility = "visible";
-  })
-  }
-  });
     </script>
 
-    <style>
-      
-    </style>
+
   </head>
   
 
@@ -49,13 +34,15 @@
       </div>
 
       <div class="textguide">
-        <div class="title">
+        <div id="title" class="title">
         The Jobseeking Web Designer
         </div>
-        <div class="subtitle">
+
+        <div id="sub" class="subtitle">
         Michael Ciurej; 2020
           </div>
-        <div class="subtitle">
+
+        <div id="subsub" class="subtitle">
         3D Photogrammetry on Augmented Reality
         </div>
 
