@@ -31,10 +31,66 @@
     z-index: 10;
   }
 
-  .say-hi-button {
-    border-radius: 100%;
-    border: none;
-    background: linear-gradient(to bottom, #ff9933, #ff9966 );
-    width: 15vw;
-    height: 15vw;
+
+  
+    .title{
+    font-family: 'Castoro', serif;
+    font-size: 5vw;
+    color: whitesmoke;
+    margin-top: 10vw;
+    margin-left: 5%;
+    margin-right: 5%;
     }
+  
+    .subtitle{
+    font-family: 'Castoro', serif;
+    font-size: 3vw;
+    color: whitesmoke;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
+    .img {
+      
+      position: absolute;
+      max-width:80%;
+      max-height:80%;       
+    }
+  
+  .textguide {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      top: 70%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      width: 90%;
+      height: 25%;
+      margin: auto;
+      flex-shrink: 100%;
+      flex-shrink: 100%;
+      border-radius: 10%;
+      background-color: #262626;
+          }
+  
+    .say-hi-button {
+      border-radius: 100%;
+      border: none;
+      background: linear-gradient(to bottom, #ff9933, #ff9966 );
+      width: 15vw;
+      height: 15vw;
+      transform: scale(1);
+      }
+  
+      #callme{
+        transform: scale(1);
+      }
+  
+      #callme:active{
+        transform: scale(0.95);
+      }
+  
