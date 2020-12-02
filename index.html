@@ -14,6 +14,7 @@
     document
       .querySelector(".say-hi-button")
       .addEventListener("click", function () {
+        console.log("click")
         window.location.href="tel:0044 7795522340";
       });
 
@@ -50,6 +51,23 @@
     align-items: center;
     z-index: 10;
   }
+
+  .title{
+  font-family: 'Castoro', serif;
+  font-size: 5vw;
+  color: whitesmoke;
+  margin-top: 10vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
+  .subtitle{
+  font-family: 'Castoro', serif;
+  font-size: 3vw;
+  color: whitesmoke;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
   
   .img {
     
@@ -58,27 +76,43 @@
     max-height:80%;       
   }
 
-
-  .buttons {
+  .textguide {
     position: absolute;
-    bottom: -43%;
-    left: -35%;
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: left;
-    align-items: left;
-    z-index: 10;
-  }
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 70%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 90%;
+    height: 25%;
+    margin: auto;
+    flex-shrink: 100%;
+    flex-shrink: 100%;
+    border-radius: 10%;
+    background-color: #262626;
+        }
 
   .say-hi-button {
     border-radius: 100%;
     border: none;
-    margin: auto;
-    background-color: whitesmoke;
-    width: 5em;
-    height: 5em;
+    background: linear-gradient(to bottom, #ff9933, #ff9966 );
+    width: 15vw;
+    height: 15vw;
+    transform: scale(1);
     }
+
+    #callme{
+      transform: scale(1);
+    }
+
+    #callme:active{
+      transform: scale(0.95);
+    }
+
     </style>
   </head>
   
@@ -89,19 +123,31 @@
           <img class="img" src="graphic\pattern-M-transparent.png">
       </div>
 
-      <div class="buttons">
-        <button class="say-hi-button" ><i class="fa fa-phone" style="font-size: xx-large;"></i></button>
-      </div>
+      <div class="textguide">
+        <div class="title">
+        The Jobseeking Web Designer
+        </div>
+        <div class="subtitle">
+        Michael Ciurej; 2020
+          </div>
+        <div class="subtitle">
+        3D Photogrammetry on Augmented Reality
+        </div>
+
+        <div class="buttons">
+          <button class="say-hi-button" id="callme" ><i class="fa fa-phone" style="font-size: 9vw; color: whitesmoke;"></i></button>
+        </div>
+
+    </div>
 
 
-
-      <a-scene arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+      <a-scene vr-mode-ui="enabled: false" arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
   
   
         <a-marker markerhandler type='pattern' url='Marker\M.patt' > 
           
 
-          <a-entity gltf-model="Model\Meetoven.glb" scale="0.15 0.15 0.15" position="0 0 0" rotation="-90 0 0" animation-mixer></a-entity>
+          <a-entity gltf-model="Model\Meetoven.glb" scale="0.15 0.15 0.15" position="0 0 1" rotation="-90 0 0" animation-mixer></a-entity>
           
 
         
