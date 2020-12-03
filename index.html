@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
+
+    
     <script>
       window.onload = function () {
     document
       .querySelector(".say-hi-button")
       .addEventListener("click", function () {
-        console.log("click")
+        console.log("Phone click")
         window.location.href="tel:0044 7795522340";
       });
           };
@@ -37,24 +41,20 @@
         </div>
       </div>
 
-      <div class="textguide">
+      <div class="textguide" id="box">
                       <div id="title" class="title">
                       Michael Ciurej (1998- )
                       </div>
 
-                      <div id="sub" class="subtitle">
+                      <div id="sub" class="italics">
                       The Jobseeking Web Designer
-                        </div>
-
-                        <div id="subsubsub" class="subtitle">
-                        2020              
                         </div>
 
                       <div id="subsub" class="subtitle">
                       3D Photogrammetry on Augmented Reality
                       </div>
 
-
+                      
       </div>
 
 
@@ -65,7 +65,7 @@
         <a-marker markerhandler type='pattern' url='Marker\M.patt' > 
           
 
-          <a-entity gltf-model="Model\Meetoven.glb" scale="0.15 0.15 0.15" position="0 0 1" rotation="-90 0 0" animation-mixer></a-entity>
+          <a-entity gltf-model="Model\Meetoven.glb" scale="0.15 0.15 0.15" position="0 0 1" rotation="-100 0 0" animation-mixer></a-entity>
           
 
         
