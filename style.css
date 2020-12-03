@@ -24,7 +24,7 @@
   .buttons {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 5vw;
     margin-bottom: 5vw;
@@ -36,9 +36,10 @@
     font-family: 'Castoro', serif;
     font-size: 5vw;
     color: whitesmoke;
-    margin-top: 10vw;
+    margin-top: 5vw;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5vw;
     visibility: hidden;
     }
   
@@ -57,6 +58,18 @@
       max-width:80%;
       max-height:80%;       
     }
+
+  .rowcontainer{
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    top: 80%;
+    left: 80%;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: pink;
+    z-index: 10;
+  }
   
   .textguide {
       position: absolute;
@@ -71,11 +84,11 @@
       right: 0%;
       width: 90%;
       height: 25%;
-      margin: auto;
       flex-shrink: 100%;
       flex-shrink: 100%;
-      border-radius: 10%;
+      border-radius: 0%;
       background-color: #262626;
+      z-index: 2;
           }
   
     .say-hi-button {
