@@ -4,7 +4,7 @@
     <link rel="icon" href="icon.png">
 
 
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script src="script.js"></script>
@@ -36,38 +36,38 @@
 
     <body style="margin : 0px; overflow: hidden;">
       
+     
       <div id="marker" class="guide">
-          <img class="img" src="graphic\pattern-M-transparent.png">
-      </div>
+        <img class="img" src="graphic\pattern-M-transparent.png">
+    </div>
 
-      <div class="rowcontainer">
-        <div class="buttons">
-          <button class="say-hi-button" id="callme" ><i class="fa fa-phone" style="font-size: 9vw; color: whitesmoke;"></i></button>
-        </div>
+    <div class="rowcontainer">
+      <div class="buttons">
+        <button class="say-hi-button" id="callme" ><i class="fa fa-phone" style="font-size: 9vw; color: whitesmoke;"></i></button>
       </div>
+    </div>
 
-      <div class="intro" id="prompt">
-        <div class="introtext">
-        FIND THE MARKER
-         </div>
-      </div>
+    <div class="intro" id="prompt">
+      <div class="introtext">
+      FIND THE MARKER
+       </div>
+    </div>
 
-      <div class="textguide" id="box">
-                      <div id="title" class="title">
-                      Mike Ciurej
+    <div class="textguide" id="box">
+                    <div id="title" class="title">
+                    Mike Ciurej
+                    </div>
+
+                    <div id="sub" class="italics">
+                    Combining strategic direction with technical ability
                       </div>
 
-                      <div id="sub" class="italics">
-                      Combining strategic direction with technical ability
-                        </div>
+                    <div id="subsub" class="subtitle">
+                    3D Photogrammetry
+                    </div>
 
-                      <div id="subsub" class="subtitle">
-                      3D Photogrammetry
-                      </div>
-
-                      
-      </div>
-
+                    
+    </div>
 
 
       <a-scene vr-mode-ui="enabled: false" arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
@@ -76,7 +76,9 @@
         <a-marker markerhandler type='pattern' url='Marker\M.patt' > 
           
 
-          <a-entity gltf-model="/Model/Flower_head_F.gltf" scale="1 1 1" position="0 0 0" rotation="0 0 0" animation-mixer></a-entity>
+          <a-entity id="head" gltf-model="Model/Flower_head_F.gltf" scale="1 1 1" position="0 0 0" rotation="0 0 0" animation-mixer>
+
+          </a-entity>
           
 
         
